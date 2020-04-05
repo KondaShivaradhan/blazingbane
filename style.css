@@ -1,0 +1,155 @@
+body {
+    margin: 0;
+    background-color: rgb(0, 0, 0);
+}
+::-webkit-scrollbar {
+    display: none;
+}
+#icon
+{
+    transition: all 1s;
+  opacity: 0;
+}
+#text
+{
+    transition: opacity .5s ease-in-out;
+}
+#heading h1, h3 {
+    font-family: 'Russo One', sans-serif;
+    font-weight: 900;
+    /* background: linear-gradient(to right, #30CFD0 0%, #330867 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent; */
+    animation-timing-function: ease-out;
+    animation-name: game;
+    animation-duration: 1s;
+    letter-spacing: 5px;
+}
+@keyframes achive
+{
+    from
+    {
+        width: 100px
+    }
+    to{
+       width: 400px;
+    }
+}
+#battlefield    
+{
+    height: 90vh;
+    width: 100%;
+    overflow: hidden;
+    background: linear-gradient(rgba(0, 0, 0, 0.507),rgba(0, 0, 0, 0.514)),url(https://wallpaperaccess.com/download/battlefield-5-144817);
+    background-attachment: fixed;
+    background-size: cover;
+}
+.wrap {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* https://wallpaperaccess.com/download/apex-legends-1096607 linear-gradient(rgba(0, 0, 0, 0.507),rgba(0, 0, 0, 0.514)), */
+#apex {
+    height: 90vh;
+    width: 100%;
+    overflow: hidden;
+    background:linear-gradient(rgba(0, 0, 0, 0.507),rgba(0, 0, 0, 0.514)),url('https://wallpaperaccess.com/download/apex-legends-1078106');
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: rgb(218, 214, 214);
+}
+#achiv
+{
+    opacity: 0;
+    transition: all 1s;
+}
+.achie {
+    transition: all 1s;
+    letter-spacing: 2px;
+    word-spacing: 3px;
+    text-align: center;
+    position: fixed;
+    width: 400px;
+    height: auto;
+    color: #efefef;
+    background: #3d4142;
+    border-radius: 10em;
+    position: fixed;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-right: 20px;
+    min-height: 1.5em;
+    overflow: hidden;
+}
+
+.button {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    padding: 10px 21px;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+}
+
+.button:hover {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 50px rgba(255, 255, 255, 0.4);
+    color: rgb(0, 0, 0);
+    transform: translateY(-7px);
+}
+
+button:focus {
+    outline: 0;
+}
+#gcon {
+    font-family: Montserrat, sans-serif;
+    letter-spacing: 2px;
+    line-height: 30px;
+    position: relative;
+    width: 100%;
+    z-index: 50;
+    overflow: scroll;
+    height: auto;
+    top: 0px;
+    text-align: center;
+    color: white;
+}
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 101vh;
+}
+
+#heading {
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+@keyframes shade {
+    from {
+        box-shadow: 0px 0px 50px rgba(255, 255, 255, 0.4);
+    }
+    to {
+        box-shadow: 0px 50px 0px rgba(255, 255, 255, 0.4);
+    }
+}
+
+@keyframes game {
+    from {
+        letter-spacing: 1px;
+    }
+    to {
+        letter-spacing: 5px;
+    }
+}
