@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -23,10 +24,31 @@
             window.scrollTo(0, 0);
         }
     </script>
+
 </head>
 
 
 <body onload="set()">
+    <!-- <div class="row" id="loading">
+        <div id="letterL" class="col-md-1">L</div>
+        <div id="letter" class="col-md-1">o</div>
+        <div id="letter" class="col-md-1">a</div>
+        <div id="letter" class="col-md-1">d</div>
+        <div id="letter" class="col-md-1">i</div>
+        <div id="letter" class="col-md-1">n</div>
+        <div id="letter" class="col-md-1">g</div>
+    </div> -->
+    <!-- <div class="loading" id="welcome_msg">Loading</div> -->
+    <!-- <div id="loading">
+        <div id="shapes">
+            <div id="mata"></div>
+        </div>
+    </div> -->
+<div id="loading">
+    <div id="mata">
+        Loading
+    </div>
+</div>
     <div id="achiv" style="top:20px;left:2%" class="achie">
         <p id="text"> <i id="icon" class="fas fa-award    "></i> </p>
     </div>
@@ -59,5 +81,9 @@
 
     </div>
 </body>
+<script>
+
+    window.onload = loop
+</script>
 
 </html>

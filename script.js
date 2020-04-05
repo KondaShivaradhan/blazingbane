@@ -7,6 +7,7 @@ function set() {
     x.style.overflow = "hidden";
     y.style.overflow = "hidden";
 }
+
 function myFunction() {
     var gpad = document.getElementById("#game");
 
@@ -24,6 +25,15 @@ function myFunction() {
     }
 }
 
+
+window.addEventListener("load", function () {
+
+    var loadTime = window.performance.timing.domContentLoadedEventEnd - window.performance.timing.navigationStart;
+    document.getElementById("mata").innerHTML = "Loaded";
+    setTimeout(function () {
+        $("#loading").hide(1000);
+    }, 1000);
+})
 function start() {
     var x = document.getElementsByTagName("BODY")[0];
     var y = document.getElementsByTagName("HTML")[0];
@@ -54,7 +64,7 @@ function start() {
         }, 2000);
         scroll()
     }
-    
+
 }
 function scroll() {
     var offset = $("#apex").offset();
