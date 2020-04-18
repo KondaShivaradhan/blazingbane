@@ -7,9 +7,6 @@ body {
     display: none;
 }
 
-
-
-
 #mata {
     width: 70%;
     letter-spacing: 3rem;
@@ -17,19 +14,18 @@ body {
     overflow: hidden;
     animation: wi 2s infinite ease-in-out alternate-reverse;
 }
-@keyframes wi
-{
-    from
-    {
+
+@keyframes wi {
+    from {
         letter-spacing: 0.5rem;
         text-shadow: 0px 0px 5px white;
     }
-    to
-    {
+    to {
         letter-spacing: 1rem;
         text-shadow: 0px 0px 15px white;
     }
 }
+
 #loading {
     font-family: 'Roboto Mono', monospace;
     font-size: 10vw;
@@ -46,7 +42,6 @@ body {
     color: white;
     overflow: hidden;
 }
-
 
 #icon {
     transition: all 1s;
@@ -199,5 +194,198 @@ button:focus {
     }
     to {
         letter-spacing: 5px;
+    }
+}
+
+#shapes {
+    display: none;
+    height: auto;
+    position: fixed;
+}
+
+@media only screen and (max-device-width: 640px) {
+    /* Styles */
+}
+
+#foot {
+    display: none;
+    position: fixed;
+    bottom: 50px;
+    animation: wi 2s infinite ease-in-out alternate-reverse;
+}
+
+@media only screen and (max-device-width: 768px) {
+    #foot {
+        display: inline;
+       
+    }
+    #mata {
+        display: none;
+    }
+    #shapes {
+        display: inline;
+    }
+}
+
+#loadb {
+    margin-left: 3px;
+    transition: all 0.2s linear;
+    border-radius: 20px;
+    height: 50px;
+    width: 10px;
+    background: rgb(255, 255, 255);
+}
+
+#loadb:nth-child(1) {
+    animation: equalize 1s infinite ease-in-out alternate-reverse;
+    animation-delay: 1s;
+    transform: rotate(90deg);
+}
+
+#loadb:nth-child(2) {
+    transform: rotate(90deg);
+    animation: equalize 1s infinite ease-in-out alternate-reverse;
+    animation-delay: 0.7s;
+}
+
+#loadb:nth-child(3) {
+    transform: rotate(90deg);
+    animation: equalize 1s infinite ease-in-out alternate-reverse;
+    animation-delay: 0.5s;
+}
+
+#loadb:nth-child(4) {
+    transform: rotate(90deg);
+    animation: equalize 1s infinite ease-in-out alternate-reverse;
+    animation-delay: 0.2s;
+}
+
+#loadb:nth-child(5) {
+    transform: rotate(90deg);
+    animation: equalize 1s infinite ease-in-out alternate-reverse;
+}
+
+@keyframes equalize {
+    0% {
+        height: 90px;
+    }
+    100% {
+        height: 10px;
+    }
+}
+
+/* @keyframes equalize {
+    0% {
+        height: 60px;
+    }
+    4% {
+        height: 50px;
+    }
+    8% {
+        height: 40px;
+    }
+    12% {
+        height: 30px;
+    }
+    16% {
+        height: 20px;
+    }
+    20% {
+        height: 30px;
+    }
+    24% {
+        height: 40px;
+    }
+    28% {
+        height: 10px;
+    }
+    32% {
+        height: 40px;
+    }
+    36% {
+        height: 60px;
+    }
+    40% {
+        height: 20px;
+    }
+    44% {
+        height: 40px;
+    }
+    48% {
+        height: 60px;
+    }
+    52% {
+        height: 30px;
+    }
+    56% {
+        height: 10px;
+    }
+    60% {
+        height: 30px;
+    }
+    64% {
+        height: 50px;
+    }
+    68% {
+        height: 60px;
+    }
+    72% {
+        height: 70px;
+    }
+    76% {
+        height: 80px;
+    }
+    80% {
+        height: 70px;
+    }
+    84% {
+        height: 60px;
+    }
+    88% {
+        height: 50px;
+    }
+    92% {
+        height: 60px;
+    }
+    96% {
+        height: 70px;
+    }
+    100% {
+        height: 80px;
+    }
+} */
+
+@keyframes schange {
+    0% {
+        width: 100px;
+        height: 100px;
+        background: red;
+    }
+    25% {
+        width: 100px;
+        height: 100px;
+        background: red;
+        border-radius: 50%
+    }
+    50% {
+        width: 200px;
+        height: 100px;
+        background: red;
+        border-radius: 100px / 50px;
+    }
+    75% {
+        width: 0;
+        height: 0;
+        border-left: 70px solid transparent;
+        border-right: 70px solid transparent;
+        border-top: 100px solid red;
+        border-radius: 50%;
+    }
+    100% {
+        display: block;
+        width: 126px;
+        height: 180px;
+        background-color: red;
+        border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
     }
 }

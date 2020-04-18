@@ -1,13 +1,13 @@
 window.onscroll = function () {
     myFunction();
 };
+
 function set() {
     var x = document.getElementsByTagName("BODY")[0];
     var y = document.getElementsByTagName("HTML")[0];
     x.style.overflow = "hidden";
     y.style.overflow = "hidden";
 }
-
 function myFunction() {
     var gpad = document.getElementById("#game");
 
@@ -24,13 +24,38 @@ function myFunction() {
         document.getElementById("ncon2s").style.top = "-100px";
     }
 }
+function sho() {
+    var $all_msg = $('#welcome_msg');
 
+    var $wordList = $('#welcome_msg').text().split("");
+
+    $('#welcome_msg').text("");
+
+    $.each($wordList, function (idx, elem) {
+        var newEL = $("<span/>").text(elem).css({
+            opacity: 1
+        });
+
+        newEL.appendTo($all_msg);
+
+        newEL.delay(idx * 70);
+
+        newEL.animate({
+            opacity: 1
+        }, 1100);
+
+    });
+}
 
 window.addEventListener("load", function () {
-
-    var loadTime = window.performance.timing.domContentLoadedEventEnd - window.performance.timing.navigationStart;
     document.getElementById("mata").innerHTML = "Loaded";
+    $("#shapes").hide(1000);
+    var fg = document.getElementById("foot")
+    fg.style.transition = "all 0.5s";
+    fg.style.bottom = "45vh";
+    document.getElementById("foot").innerHTML = "Loaded";
     setTimeout(function () {
+       
         $("#loading").hide(1000);
     }, 1000);
 })
@@ -46,10 +71,6 @@ function start() {
         y.style.overflow = "scroll";
         document.getElementById("click").style.transition = "all 0.5s";
         document.getElementById("click").innerHTML = "Scroll Unlocked!";
-        // document.getElementById('text').style.transition = "all 1s";
-        // document.getElementById('text').innerHTML += " Achivement Unlocked";
-
-        // $('#text').delay(1000).append(" Achivement Unlocked").fadeIn(1000);
         if ($('#achiv').css('opacity') == 0) {
             $('#achiv').css('opacity', 1);
             setTimeout(function () {
