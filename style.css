@@ -77,9 +77,18 @@ body {
     height: 90vh;
     width: 100%;
     overflow: hidden;
-    background: linear-gradient(rgba(0, 0, 0, 0.507), rgba(0, 0, 0, 0.514)), url(https://wallpaperaccess.com/download/apex-legends-144817);
+    background: linear-gradient(rgba(0, 0, 0, 0.507), rgba(0, 0, 0, 0.514)), url(144817.jpg);
     background-attachment: fixed;
     background-size: cover;
+}
+
+ul {
+   
+    padding: 1rem;
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
 }
 
 .wrap {
@@ -91,14 +100,35 @@ body {
 
 /* https://wallpaperaccess.com/download/apex-legends-1096607 linear-gradient(rgba(0, 0, 0, 0.507),rgba(0, 0, 0, 0.514)), */
 
+#nav {
+    font-weight: bolder;
+    text-align: center;
+    position: fixed;
+    z-index: 1000;
+    height: 60px;
+    color: black;
+    bottom: -200px;
+    width: 100%;
+    box-shadow: 0px 0px 6px 0px rgba(255, 255, 255, 0.75);
+    background-color: #fff;
+}
+
 #apex {
     height: 90vh;
     width: 100%;
     overflow: hidden;
-    background: linear-gradient(rgba(0, 0, 0, 0.507), rgba(0, 0, 0, 0.514)), url(https://wallpaperaccess.com/download/apex-legends-1078106);
+    background: linear-gradient(rgba(0, 0, 0, 0.507), rgba(0, 0, 0, 0.514)), url(1078106.jpg);
     background-size: cover;
     background-attachment: fixed;
     background-color: rgb(218, 214, 214);
+}
+
+#shade {
+    display: flex;
+    color: white;
+    text-align: center;
+    position: relative;
+    height: 20%;
 }
 
 #achiv {
@@ -217,7 +247,6 @@ button:focus {
 @media only screen and (max-device-width: 768px) {
     #foot {
         display: inline;
-       
     }
     #mata {
         display: none;
@@ -225,6 +254,15 @@ button:focus {
     #shapes {
         display: inline;
     }
+    #nhead {
+        display: none;
+    }
+    .button:hover {
+        background-color: rgb(255, 255, 255);
+        box-shadow: 0px 0px 50px rgba(255, 255, 255, 0.4);
+        color: rgb(0, 0, 0);
+    }
+    
 }
 
 #loadb {

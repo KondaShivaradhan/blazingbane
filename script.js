@@ -9,19 +9,14 @@ function set() {
     y.style.overflow = "hidden";
 }
 function myFunction() {
-    var gpad = document.getElementById("#game");
-
-
-    if (window.pageYOffset > 1) {
-
-
+    var nav = document.getElementById("nav");
+    var offset = $("#apex").offset();
+    var g = offset.top;
+    nav.style.transition= "all 1s";
+    if (window.pageYOffset > 90) {
+        nav.style.bottom = "0px"
     } else {
-        document.getElementById("navis").style.transition = "all 0.5s";
-        document.getElementById("ncons").style.transition = "all 0.5s";
-        document.getElementById("ncon2s").style.transition = "all 0.5s";
-        document.getElementById("navis").style.top = "-100px";
-        document.getElementById("ncons").style.top = "-100px";
-        document.getElementById("ncon2s").style.top = "-100px";
+        nav.style.bottom = "-100px"
     }
 }
 function sho() {
@@ -55,8 +50,7 @@ window.addEventListener("load", function () {
     fg.style.bottom = "45vh";
     document.getElementById("foot").innerHTML = "Loaded";
     setTimeout(function () {
-       
-        $("#loading").hide(1000);
+        $("#loading").css('transform', 'scale(15)').hide(1000);
     }, 1000);
 })
 function start() {
