@@ -7,12 +7,13 @@ function set() {
     var y = document.getElementsByTagName("HTML")[0];
     x.style.overflow = "hidden";
     y.style.overflow = "hidden";
+    specs();
 }
 function myFunction() {
     var nav = document.getElementById("nav");
     var offset = $("#apex").offset();
     var g = offset.top;
-    nav.style.transition= "all 1s";
+    nav.style.transition = "all 1s";
     if (window.pageYOffset > 90) {
         nav.style.bottom = "0px"
     } else {
@@ -41,7 +42,37 @@ function sho() {
 
     });
 }
+// $.fn.hScroll = function( options )
+//  {
+//    function scroll( obj, e )
+//    {
+//      var evt = e.originalEvent;
+//      var direction = evt.detail ? evt.detail * (-120) : evt.wheelDelta;
 
+//      if( direction > 0)
+//      {
+//         direction =  $(obj).scrollLeft() - 120;
+//      }
+//      else
+//      {
+//         direction = $(obj).scrollLeft() + 120;
+//      }
+
+//      $(obj).scrollLeft( direction );
+
+//      e.preventDefault();
+//    }
+
+//    $(this).width( $(this).find('div').width() );
+
+//    $(this).bind('DOMMouseScroll mousewheel', function( e )
+//    {
+//     scroll( this, e );
+//    });
+// }
+// $(document).ready(function(){
+//     $('#scrolla').hScroll(); // You can pass (optionally) scrolling amount
+// });
 window.addEventListener("load", function () {
     document.getElementById("mata").innerHTML = "Loaded";
     $("#shapes").hide(1000);
@@ -53,11 +84,25 @@ window.addEventListener("load", function () {
         $("#loading").css('transform', 'scale(15)').hide(1000);
     }, 1000);
 })
+function specs() {
+    var s = document.getElementById('sp');
+    var d = document.getElementById('dev');
+    d.style.display = "none";
+    // $(s).show(1000)
+    s.style.display = "inline"; 
+}
+function dev() {
+    var s = document.getElementById('sp');
+    var d = document.getElementById('dev');
+    // $(d).show(4000)
+    d.style.display = "inline";
+    s.style.display = "none";
+}
 function start() {
     var x = document.getElementsByTagName("BODY")[0];
     var y = document.getElementsByTagName("HTML")[0];
 
-    y.style.overflow = "scroll";
+    y.style.overflow = "auto";
     if (document.getElementById("click").innerHTML === "Play") {
         var x = document.getElementsByTagName("BODY")[0];
         var y = document.getElementsByTagName("HTML")[0];
@@ -71,13 +116,13 @@ function start() {
                 $('#icon').css('opacity', 1);
             }, 500);
             setTimeout(function () {
-                $('#text').append(" Achivement Unlocked").slideDown(1000);
+                $('#text').append(" Scroll Unlocked").slideDown(1000);
             }, 1000);
         }
         setTimeout(() => {
             $('#achiv').css('opacity', 0);
         }, 2000);
-        scroll()
+        // scroll()
     }
 
 }

@@ -1,6 +1,7 @@
 body {
     margin: 0;
     background-color: rgb(0, 0, 0);
+    overflow: hidden;
 }
 
 ::-webkit-scrollbar {
@@ -73,6 +74,132 @@ body {
     }
 }
 
+/* specs */
+
+#cli {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    padding: 10px 21px;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+}
+
+#cli:hover {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.4);
+    color: rgb(0, 0, 0);
+    transform: translateY(-7px);
+}
+
+#cli:focus {
+    outline: none;
+}
+
+tr {
+    width: 100%;
+}
+
+td {
+    padding: 14px;
+    height: 100px;
+    width: 100px;
+}
+
+#specs img {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+#apex {
+    color: white;
+    text-align: center;
+    padding: 20px;
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+    background: linear-gradient(rgba(0, 0, 0, 0.507), rgba(0, 0, 0, 0.514)), url(165496.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: rgb(218, 214, 214);
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+
+#specs {
+    float: left;
+    background: rgba(255, 255, 255, 0.74);
+    position: relative;
+    height: auto;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: scroll;
+}
+
+table, th, td {
+    /* backdrop-filter: blur(10px); */
+    background: rgba(0, 0, 0, 0.363);
+    border: 1px solid rgba(255, 255, 255, 0.521);
+    border-collapse: collapse;
+}
+
+th {
+    width: 50%;
+}
+
+#anav {
+    top: 20px;
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    width: 40%;
+}
+
+#acon {
+    /* letter-spacing: 3px;
+    line-height: 2rem; */
+    padding: 20px;
+    color: white;
+    background-color: rgba(255, 255, 255, 0);
+    position: relative;
+    height: auto;
+    width: 40%;
+    text-align: center;
+    margin: auto;
+    left: 0;
+    right: 0;
+}
+
+#image {
+    float: right;
+    height: 100%;
+    width: 40%;
+    background: url(yi2gs4ei64041.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 40%;
+}
+
+.divs {
+    width: 150px;
+    height: 100px;
+}
+
+/* Battlefield */
+
 #battlefield {
     height: 90vh;
     width: 100%;
@@ -83,7 +210,6 @@ body {
 }
 
 ul {
-   
     padding: 1rem;
     text-decoration: none;
     list-style: none;
@@ -100,6 +226,14 @@ ul {
 
 /* https://wallpaperaccess.com/download/apex-legends-1096607 linear-gradient(rgba(0, 0, 0, 0.507),rgba(0, 0, 0, 0.514)), */
 
+#scrolla {
+    width: 100%;
+    height: auto;
+    background-color: red;
+    white-space: nowrap;
+    overflow-x: scroll;
+}
+
 #nav {
     font-weight: bolder;
     text-align: center;
@@ -111,16 +245,6 @@ ul {
     width: 100%;
     box-shadow: 0px 0px 6px 0px rgba(255, 255, 255, 0.75);
     background-color: #fff;
-}
-
-#apex {
-    height: 90vh;
-    width: 100%;
-    overflow: hidden;
-    background: linear-gradient(rgba(0, 0, 0, 0.507), rgba(0, 0, 0, 0.514)), url(1078106.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-    background-color: rgb(218, 214, 214);
 }
 
 #shade {
@@ -233,10 +357,6 @@ button:focus {
     position: fixed;
 }
 
-@media only screen and (max-device-width: 640px) {
-    /* Styles */
-}
-
 #foot {
     display: none;
     position: fixed;
@@ -245,6 +365,15 @@ button:focus {
 }
 
 @media only screen and (max-device-width: 768px) {
+    #heading {
+        margin-top: -100px;
+    }
+    #apex {
+        background: linear-gradient(rgba(0, 0, 0, 0.507), rgba(0, 0, 0, 0.507)), url(yi2gs4ei64041.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50% 20%;
+    }
     #foot {
         display: inline;
     }
@@ -262,7 +391,18 @@ button:focus {
         box-shadow: 0px 0px 50px rgba(255, 255, 255, 0.4);
         color: rgb(0, 0, 0);
     }
-    
+    #anav {
+        width: 80%;
+    }
+    #acon {
+        letter-spacing: 2px;
+        line-height: 1.5rem;
+        width: 90%;
+    }
+    #cli {
+        transform: translateY(-2px);
+        font-size: small;
+    }
 }
 
 #loadb {
@@ -311,87 +451,6 @@ button:focus {
         height: 10px;
     }
 }
-
-/* @keyframes equalize {
-    0% {
-        height: 60px;
-    }
-    4% {
-        height: 50px;
-    }
-    8% {
-        height: 40px;
-    }
-    12% {
-        height: 30px;
-    }
-    16% {
-        height: 20px;
-    }
-    20% {
-        height: 30px;
-    }
-    24% {
-        height: 40px;
-    }
-    28% {
-        height: 10px;
-    }
-    32% {
-        height: 40px;
-    }
-    36% {
-        height: 60px;
-    }
-    40% {
-        height: 20px;
-    }
-    44% {
-        height: 40px;
-    }
-    48% {
-        height: 60px;
-    }
-    52% {
-        height: 30px;
-    }
-    56% {
-        height: 10px;
-    }
-    60% {
-        height: 30px;
-    }
-    64% {
-        height: 50px;
-    }
-    68% {
-        height: 60px;
-    }
-    72% {
-        height: 70px;
-    }
-    76% {
-        height: 80px;
-    }
-    80% {
-        height: 70px;
-    }
-    84% {
-        height: 60px;
-    }
-    88% {
-        height: 50px;
-    }
-    92% {
-        height: 60px;
-    }
-    96% {
-        height: 70px;
-    }
-    100% {
-        height: 80px;
-    }
-} */
 
 @keyframes schange {
     0% {
