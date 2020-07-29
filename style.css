@@ -27,8 +27,20 @@ body {
     }
 }
 
+.parallax {
+    color: white;
+    text-align: center;
+    width: 100%;
+    overflow: hidden;
+    background: transparent;
+}
+
+#text {
+    font-family: 'Comfortaa', cursive;
+}
+
 #loading {
-    font-family: 'Roboto Mono', monospace;
+    font-family: 'Comfortaa', cursive;
     font-size: 10vw;
     display: flex;
     align-items: center;
@@ -51,10 +63,12 @@ body {
 
 #text {
     transition: opacity .5s ease-in-out;
+    font-family: comfortica, cursive;
 }
 
-#heading h1, h3 {
-    font-family: 'Russo One', sans-serif;
+#heading h1,
+h3 {
+    font-family: 'Comfortaa', cursive;
     font-weight: 900;
     /* background: linear-gradient(to right, #30CFD0 0%, #330867 100%);
 	-webkit-background-clip: text;
@@ -74,10 +88,11 @@ body {
     }
 }
 
+
 /* specs */
 
 #cli {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Comfortaa', cursive;
     font-size: 20px;
     letter-spacing: 2px;
     font-weight: 500;
@@ -120,16 +135,16 @@ td {
 }
 
 #apex {
+    font-family: 'Comfortaa', cursive;
+    position: relative;
     color: white;
+    z-index: 10;
     text-align: center;
     padding: 20px;
     height: auto;
     width: 100%;
     overflow: hidden;
-    background: linear-gradient(rgba(0, 0, 0, 0.507), rgba(0, 0, 0, 0.514)), url(165496.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-    background-color: rgb(218, 214, 214);
+    /* background: linear-gradient(rgba(0, 0, 0, 0.507), rgba(0, 0, 0, 0.514)), url('165496.jpg'); */
     /* display: flex;
     align-items: center;
     justify-content: center; */
@@ -147,7 +162,9 @@ td {
     overflow: scroll;
 }
 
-table, th, td {
+table,
+th,
+td {
     /* backdrop-filter: blur(10px); */
     background: rgba(0, 0, 0, 0.363);
     border: 1px solid rgba(255, 255, 255, 0.521);
@@ -198,15 +215,13 @@ th {
     height: 100px;
 }
 
+
 /* Battlefield */
 
 #battlefield {
     height: 90vh;
     width: 100%;
     overflow: hidden;
-    background: linear-gradient(rgba(0, 0, 0, 0.507), rgba(0, 0, 0, 0.514)), url(144817.jpg);
-    background-attachment: fixed;
-    background-size: cover;
 }
 
 ul {
@@ -224,6 +239,7 @@ ul {
     justify-content: center;
 }
 
+
 /* https://wallpaperaccess.com/download/apex-legends-1096607 linear-gradient(rgba(0, 0, 0, 0.507),rgba(0, 0, 0, 0.514)), */
 
 #scrolla {
@@ -240,11 +256,12 @@ ul {
     position: fixed;
     z-index: 1000;
     height: 60px;
-    color: black;
+    color: rgb(0, 0, 0);
     bottom: -200px;
     width: 100%;
     box-shadow: 0px 0px 6px 0px rgba(255, 255, 255, 0.75);
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.698);
+    backdrop-filter: blur(5px);
 }
 
 #shade {
@@ -280,7 +297,7 @@ ul {
 }
 
 .button {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Comfortaa', cursive;
     font-size: 20px;
     letter-spacing: 2px;
     font-weight: 500;
@@ -307,7 +324,7 @@ button:focus {
 }
 
 #gcon {
-    font-family: Montserrat, sans-serif;
+    font-family: 'Comfortaa', cursive;
     letter-spacing: 2px;
     line-height: 30px;
     position: relative;
@@ -358,6 +375,7 @@ button:focus {
 }
 
 #foot {
+    font-family: 'Poppins', sans-serif;
     display: none;
     position: fixed;
     bottom: 50px;
@@ -485,4 +503,16 @@ button:focus {
         background-color: red;
         border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
     }
+}
+
+hr {
+    color: white;
+}
+
+#footer {
+    padding-top: 50px;
+    padding-bottom: 100px;
+    color: white;
+    font-family: monospace;
+    height: auto;
 }
