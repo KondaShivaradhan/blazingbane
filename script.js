@@ -1,5 +1,6 @@
 window.onscroll = function() {
     myFunction();
+
 };
 
 function set() {
@@ -20,30 +21,31 @@ function myFunction() {
     } else {
         nav.style.bottom = "-100px"
     }
+    var text = document.getElementById("check")
+        // var s = window.pageYOffset
+    var tt = $(text).offset();
+    var f = $("#footer").offset();
+    var temp = $("#temp").offset();
+    var bf = $('#battlefield').offset();
+    var specs = $('#apex').offset();
+    // console.log('foter starts at ' + f.top + " calculated scroll is " + (f.top - (tt.top)) + " scroll is at " + s)
+
+    if ((bf.top - tt.top) < 0) {
+        text.innerHTML = "Battlefield"
+    } else {
+        text.innerHTML = "Intro"
+    }
+    if ((specs.top - tt.top) < 0) {
+        text.innerHTML = "Specs"
+    }
+    if ((temp.top - tt.top) < 0) {
+        text.innerHTML = "temp"
+    }
+    if ((f.top - tt.top) < 0) {
+        text.innerHTML = "footer"
+    }
 }
 
-function sho() {
-    var $all_msg = $('#welcome_msg');
-
-    var $wordList = $('#welcome_msg').text().split("");
-
-    $('#welcome_msg').text("");
-
-    $.each($wordList, function(idx, elem) {
-        var newEL = $("<span/>").text(elem).css({
-            opacity: 1
-        });
-
-        newEL.appendTo($all_msg);
-
-        newEL.delay(idx * 70);
-
-        newEL.animate({
-            opacity: 1
-        }, 1100);
-
-    });
-}
 
 window.addEventListener("load", function() {
     document.getElementById("mata").innerHTML = "Loaded";
@@ -92,23 +94,5 @@ function start() {
         setTimeout(() => {
             $('#achiv').css('opacity', 0);
         }, 2000);
-        // scroll()
     }
-
-}
-
-function scroll() {
-    var offset = $("#apex").offset();
-    var g = offset.top;
-    setTimeout(() => {
-        window.scrollTo({
-            top: g,
-            behavior: 'smooth',
-        })
-    }, 2000);
-    action();
-}
-
-function action() {
-
 }

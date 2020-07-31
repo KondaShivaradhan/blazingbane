@@ -52,6 +52,18 @@ body {
     overflow: hidden;
 }
 
+#check {
+    top: 50%;
+    padding: 7px;
+    position: absolute;
+    z-index: 2000;
+    height: 40px;
+    color: white;
+    width: 200px;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.582);
+}
+
 #icon {
     transition: all 1s;
     opacity: 0;
@@ -66,9 +78,6 @@ body {
 h3 {
     font-family: 'Comfortaa', cursive;
     font-weight: 900;
-    /* background: linear-gradient(to right, #30CFD0 0%, #330867 100%);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent; */
     animation-timing-function: ease-out;
     animation-name: game;
     animation-duration: 1s;
@@ -392,6 +401,9 @@ button:focus {
         background-size: cover;
         background-repeat: no-repeat;
         background-position: 50% 20%;
+    }
+    #check {
+        display: none;
     }
     #sl {
         display: flex;
