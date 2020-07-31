@@ -1,4 +1,4 @@
-window.onscroll = function () {
+window.onscroll = function() {
     myFunction();
 };
 
@@ -9,6 +9,7 @@ function set() {
     y.style.overflow = "hidden";
     specs();
 }
+
 function myFunction() {
     var nav = document.getElementById("nav");
     var offset = $("#apex").offset();
@@ -20,6 +21,7 @@ function myFunction() {
         nav.style.bottom = "-100px"
     }
 }
+
 function sho() {
     var $all_msg = $('#welcome_msg');
 
@@ -27,7 +29,7 @@ function sho() {
 
     $('#welcome_msg').text("");
 
-    $.each($wordList, function (idx, elem) {
+    $.each($wordList, function(idx, elem) {
         var newEL = $("<span/>").text(elem).css({
             opacity: 1
         });
@@ -42,55 +44,22 @@ function sho() {
 
     });
 }
-// $.fn.hScroll = function( options )
-//  {
-//    function scroll( obj, e )
-//    {
-//      var evt = e.originalEvent;
-//      var direction = evt.detail ? evt.detail * (-120) : evt.wheelDelta;
 
-//      if( direction > 0)
-//      {
-//         direction =  $(obj).scrollLeft() - 120;
-//      }
-//      else
-//      {
-//         direction = $(obj).scrollLeft() + 120;
-//      }
-
-//      $(obj).scrollLeft( direction );
-
-//      e.preventDefault();
-//    }
-
-//    $(this).width( $(this).find('div').width() );
-
-//    $(this).bind('DOMMouseScroll mousewheel', function( e )
-//    {
-//     scroll( this, e );
-//    });
-// }
-// $(document).ready(function(){
-//     $('#scrolla').hScroll(); // You can pass (optionally) scrolling amount
-// });
-window.addEventListener("load", function () {
+window.addEventListener("load", function() {
     document.getElementById("mata").innerHTML = "Loaded";
-    $("#shapes").hide(1000);
-    var fg = document.getElementById("foot")
-    fg.style.transition = "all 0.5s";
-    fg.style.bottom = "45vh";
-    document.getElementById("foot").innerHTML = "Loaded";
-    setTimeout(function () {
+    setTimeout(function() {
         $("#loading").css('transform', 'scale(15)').hide(1000);
     }, 1000);
 })
+
 function specs() {
     var s = document.getElementById('sp');
     var d = document.getElementById('dev');
     d.style.display = "none";
     // $(s).show(1000)
-    s.style.display = "inline"; 
+    s.style.display = "inline";
 }
+
 function dev() {
     var s = document.getElementById('sp');
     var d = document.getElementById('dev');
@@ -98,6 +67,7 @@ function dev() {
     d.style.display = "inline";
     s.style.display = "none";
 }
+
 function start() {
     var x = document.getElementsByTagName("BODY")[0];
     var y = document.getElementsByTagName("HTML")[0];
@@ -112,11 +82,11 @@ function start() {
         document.getElementById("click").innerHTML = "Scroll Unlocked!";
         if ($('#achiv').css('opacity') == 0) {
             $('#achiv').css('opacity', 1);
-            setTimeout(function () {
+            setTimeout(function() {
                 $('#icon').css('opacity', 1);
             }, 500);
-            setTimeout(function () {
-                $('#text').append(" Scroll Unlocked").slideDown(1000);
+            setTimeout(function() {
+                $('#text').append(" Scroll Activated").slideDown(1000);
             }, 1000);
         }
         setTimeout(() => {
@@ -126,6 +96,7 @@ function start() {
     }
 
 }
+
 function scroll() {
     var offset = $("#apex").offset();
     var g = offset.top;
@@ -137,6 +108,7 @@ function scroll() {
     }, 2000);
     action();
 }
+
 function action() {
 
 }
