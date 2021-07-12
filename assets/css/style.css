@@ -1,0 +1,238 @@
+body {
+    margin: 0;
+    background-color: rgb(0, 0, 0);
+    overflow: hidden;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+#check {
+    top: 50%;
+    padding: 7px;
+    position: absolute;
+    z-index: 2000;
+    height: 40px;
+    color: white;
+    width: 200px;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.582);
+}
+
+#nav {
+    font-weight: bolder;
+    text-align: center;
+    position: fixed;
+    z-index: 1000;
+    height: 60px;
+    color: rgb(0, 0, 0);
+    bottom: -200px;
+    width: 100%;
+    box-shadow: 0px 0px 6px 0px rgba(255, 255, 255, 0.75);
+    background-color: rgba(255, 255, 255, 0.698);
+    backdrop-filter: blur(5px);
+}
+
+.button {
+    font-family: 'Comfortaa', cursive;
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    padding: 10px 21px;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+}
+
+.button:hover {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 50px rgba(255, 255, 255, 0.4);
+    color: rgb(0, 0, 0);
+    transform: translateY(-7px);
+}
+
+button:focus {
+    outline: 0;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 101vh;
+}
+
+#heading {
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+@media only screen and (max-device-width: 768px) {
+    #heading {
+        margin-top: -100px;
+    }
+    #apex {
+        background: linear-gradient(rgba(0, 0, 0, 0.507), rgba(0, 0, 0, 0.507)), url(yi2gs4ei64041.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50% 20%;
+    }
+    #check {
+        display: none;
+    }
+    #nhead {
+        display: none;
+    }
+    .button:hover {
+        background-color: rgb(255, 255, 255);
+        box-shadow: 0px 0px 50px rgba(255, 255, 255, 0.4);
+        color: rgb(0, 0, 0);
+    }
+    #anav {
+        width: 80%;
+    }
+    #cli {
+        transform: translateY(-2px);
+        font-size: small;
+    }
+}
+
+hr {
+    color: white;
+}
+
+#footer {
+    padding-top: 50px;
+    padding-bottom: 99px;
+    color: white;
+    font-family: monospace;
+    height: auto;
+}
+
+
+/* content  */
+
+#con {
+    padding: 20px;
+    display: flex;
+    height: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#card {
+    flex-basis: auto;
+    border-radius: 20px;
+    margin: 10px;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    height: auto;
+}
+
+
+/* images laytout */
+
+#ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#ul>div {
+    border-radius: 25px;
+    padding: 10px;
+    overflow: hidden;
+    margin: 10px;
+    flex-grow: 1;
+}
+
+img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    vertical-align: bottom;
+}
+
+@media (max-aspect-ratio: 1/1) {
+    li {
+        height: 30vh;
+    }
+}
+
+@media (max-height: 480px) {
+    li {
+        height: 80vh;
+    }
+}
+
+#card {
+    text-align: center;
+    width: auto;
+    background-color: teal;
+}
+
+@media (max-aspect-ratio: 1/1) and (max-width: 480px) {
+    ul {
+        flex-direction: row;
+    }
+    li {
+        height: auto;
+        width: 100%;
+    }
+}
+
+#discord {
+    height: 400px;
+}
+
+
+/* background video */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.intro {
+    height: 100vh;
+}
+
+.intro video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.intro h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 80px;
+    color: white;
+}
+
+section {
+    height: auto;
+    color: white;
+}
+
+section h1 {
+    padding-top: 300px;
+    text-align: center;
+    font-size: 80px;
+}

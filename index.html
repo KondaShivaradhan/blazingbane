@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-
+    <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=60d5bd3f71e162001342c7b7&product=inline-follow-buttons" async="async"></script>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
     <!-- font-family: 'Comfortaa', cursive; -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
@@ -16,66 +16,22 @@
     <!-- font-family: 'Hind', sans-serif; -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="parallax.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://use.fontawesome.com/4afcb75146.js"></script>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/script/script.js"></script>
     <script type="text/javascript" language="javascript">
         window.onbeforeunload = function() {
             window.scrollTo(0, 0);
         }
     </script>
+    <script src="https://apis.google.com/js/platform.js"></script>
+
 </head>
 
 <body onload="set()">
-    <div id="loading">
-        <div id="mata">
-            Loading
-        </div>
-        <div id="foot">
-            Loading
-        </div>
-        <div id="sl" class="clearfix shiva left">
-            <div id="sett">
-                <div id="triangle-topleft"></div>
-                <div id="triangle-bottomleft"></div>
-            </div>
-            <div id="sett">
-                <div id="triangle-topright"></div>
-                <div id="triangle-bottomright"></div>
-            </div>
-        </div>
-    </div>
-
-    <div id="achiv" style="top:20px;left:2%" class="achie">
-        <p id="text"> <i id="icon" class="fas fa-award"></i> </p>
-    </div>
-    <div id="nav">
-        <div class="container" id="ncon">
-            <ul>
-                <li>
-                    <i style="font-size: large;" class="fa fa-sync" aria-hidden="true"></i> <span id="nhead" style="margin-left: 2px;"> Refresh</span>
-                </li>
-                <li>
-                    <i style="font-size: large;" class="fa fa-facebook" aria-hidden="true"></i><span id="nhead">
-                        facebook</span>
-                </li>
-                <li>
-                    <i style="font-size: large;" class="fa fa-desktop" aria-hidden="true"></i> <span id="nhead"> PC
-                        spec</span>
-                </li>
-                <li>
-                    <i style="font-size: large;" class="fa fa-facebook" aria-hidden="true"></i><span id="nhead">
-                        facebook</span>
-                </li>
-
-            </ul>
-        </div>
-    </div>
     <div class="main">
         <div class="col-md-4" id="heading">
             <div id="game" style="position: relative;">
@@ -90,156 +46,21 @@
             </div>
         </div>
     </div>
-    <div id="check">
 
+    <div class="intro">
+        <h1></h1>
+        <video src="trailer.mp4"></video>
     </div>
-    <!-- Battlefield -->
-    <div id="battlefield" class="parallax" data-parallax="scroll" data-z-index="1" data-image-src="144817.jpg">
+    <section>
+        <h1>By Blazing Bane</h1>
+    </section>
 
-    </div>
-    <!-- About PC -->
-    <div class="parallax" data-parallax="scroll" data-zindex="1" data-image-src="165496.jpg">
-        <div id="apex">
-            <h3>
-                About my PC(2018)
-                <hr>
-            </h3>
-            <div id="anav" class="container">
-                <ul>
-                    <li>
-                        <button id="cli" onclick="specs()">Specs</button>
-                    </li>
-                    <li>
-                        <button id="cli" onclick="dev()">Devices</button>
-                    </li>
-                </ul>
-            </div>
-            <div id="acon">
-                <span id="sp">
-                    <table style="width: 100%;">
-                        <tr>
-                            <th>CPU</th>
-                            <td>Intel Core i7 8700k <a
-                                    href="https://ark.intel.com/content/www/us/en/ark/products/126684/intel-core-i7-8700k-processor-12m-cache-up-to-4-70-ghz.html"
-                                    target="_blank"><i class="fas fa-external-link-alt"></i></a></td>
-                        </tr>
-                        <tr>
-                            <th>GPU</th>
-                            <td>Gigabyte Nvidia GTX 1070 8GB <a
-                                    href="https://www.nvidia.com/en-in/geforce/products/10series/geforce-gtx-1070/"
-                                    target="_blank"><i class="fas fa-external-link-alt"></i></a></td>
-                        </tr>
-                        <tr>
-                            <th>Motherboard</th>
-                            <td>Gigabyte Z370 Gaming WIFI <a
-                                    href="https://www.gigabyte.com/in/Motherboard/Z370-AORUS-GAMING-WIFI-rev-10#kf"
-                                    target="_blank"><i class="fas fa-external-link-alt"></i></a></td>
-                        </tr>
-                        <tr>
-                            <th>RAM</th>
-                            <td>16gb (8+8) Corsair 3000mhz <a target="_blank"
-                                    href="https://www.corsair.com/eu/en/Categories/Products/Memory/VENGEANCE%C2%AE-LPX-8GB-%281-x-8GB%29-DDR4-DRAM-3000MHz-C16-Memory-Kit---Black/p/CMK8GX4M1D3000C16"><i
-                                        class="fas fa-external-link-alt"></i></a></td>
-                        </tr>
-                        <tr>
-                            <th>Case</th>
-                            <td>Gigabyte Aorus AC300W <a href="https://www.gigabyte.com/in/Chassis/GB-AC300W-rev-10#kf"
-                                    target="_blank"><i class="fas fa-external-link-alt"></i></a></td>
-                        </tr>
-                        <tr>
-                            <th>Power</th>
-                            <td>Cooler Master 650Watt <a target="_blank"
-                                    href="https://www.corsair.com/us/en/Categories/Products/Power-Supply-Units/cx-series-config/p/CP-9020122-NA"><i
-                                        class="fas fa-external-link-alt"></i></a></td>
-                        </tr>
-                        <tr>
-                            <th>Cooler</th>
-                            <td>Cooler Master 410R<a target="_blank"
-                                    href="https://www.coolermaster.com/catalog/coolers/cpu-air-coolers/hyper-h410r/"><i
-                                        class="fas fa-external-link-alt"></i></a></td>
-                        </tr>
-                        <tr>
-                            <th>Storage</th>
-                            <td>256gb SSD <a target="_blank"
-                                    href="https://www.kingston.com/en/ssd/kc600-sata-solid-state-drive"><i
-                                        class="fas fa-external-link-alt"></i></a> with 1TB HDD seagate
-                                <a target="_blank"
-                                    href="https://www.amazon.in/Seagate-BarraCuda-ST1000DM010-Desktop-Latest/dp/B01LNJBA2I/ref=sr_1_1?dchild=1&keywords=seagate+1tb+internal&qid=1587307359&sr=8-1"><i
-                                        class="fas fa-external-link-alt"></i></a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th>Fans</th>
-                            <td>4 RGB fans <a target="_blank"
-                                    href="https://www.amazon.in/gp/product/B07LB9N3Z4/ref=ppx_yo_dt_b_asin_title_o04_s00?ie=UTF8&psc=1"><i
-                                        class="fas fa-external-link-alt"></i></a></td>
-                        </tr>
-                    </table>
-                </span>
-                <span id="dev">
-                    <table style="width: 100%;height: 100%;">
-                        <tr>
-                            <th>Monitor</th>
-                            <td>Acer Predator XB271HU 27" 165HZ<a target="_blank"
-                                    href="https://www.acer.com/ac/en/GB/content/predator-model/UM.HX1EE.005"><i
-                                        class="fas fa-external-link-alt"></i></a></td>
-                        </tr>
-                        <tr>
-                            <th>Mouse</th>
-                            <td>Logitech G102 <a target="_blank"
-                                    href="https://www.amazon.in/Logitech-Prodigy-Optical-Storage-Capability/dp/B01MYPU20Z/ref=bdl_pop_ttl_B01MYPU20Z"><i
-                                        class="fas fa-external-link-alt"></i></a></td>
-                        </tr>
-                        <tr>
-                            <th>Keyboard</th>
-                            <td>Live Tech Membrane RGB <a target="_blank"
-                                    href="https://www.amazon.in/gp/product/B07PNBLLSR/ref=ppx_yo_dt_b_asin_title_o02_s00?ie=UTF8&psc=1"><i
-                                        class="fas fa-external-link-alt"></i></a></td>
-                        </tr>
-                        <tr>
-                            <th>Mouse Pad</th>
-                            <td>Farraige XXL 31.5"x11.8"x0.15" <a target="_blank"
-                                    href="https://www.amazon.in/gp/product/B07NXZV93D/ref=ppx_yo_dt_b_asin_title_o02_s01?ie=UTF8&psc=1"><i
-                                        class="fas fa-external-link-alt"></i></a></td>
-                        </tr>
-                        <tr>
-                            <th>Headphones</th>
-                            <td>Redgear Thunder-B 7.1 USB RGB Gaming Headphones <a target="_blank"
-                                    href="https://www.amazon.in/Redgear-Thunder-B-7-1-Headphones-Controller/dp/B07MZZZ31K"><i
-                                        class="fas fa-external-link-alt"></i></a></td>
-                        </tr>
-                        <tr>
-                            <th>External HDD</th>
-                            <td>4TB Seagate expansion <a target="_blank"
-                                    href="https://www.amazon.in/Seagate-Expansion-Desktop-External-Playstation/dp/B00UWS6YG4/ref=pd_sbs_147_4/258-4039368-4487725?_encoding=UTF8&pd_rd_i=B00UWS6YG4&pd_rd_r=7078f587-53b2-492b-9c23-2634e8a6109c&pd_rd_w=tjSuM&pd_rd_wg=ady0d&pf_rd_p=00b53f5d-d1f8-4708-89df-2987ccce05ce&pf_rd_r=QQ2CSRAH9WBNK2ZK51EX&psc=1&refRID=QQ2CSRAH9WBNK2ZK51EX   "><i
-                                        class="fas fa-external-link-alt"></i></a></td>
-                        </tr>
-                    </table>
-                    <!-- Monitor: Acer Predator XB271HU<br>
-
-                Mouse: Logitech G102 <br>
-
-                Keyboard: Generic Membrane RGB<br>
-
-                Mouse Pad: Farraige XXL 31.5"x11.8"x0.15" <br> -->
-
-
-                </span>
-            </div>
-        </div>
-    </div>
-    <div id="temp">
-
-    </div>
-    <!-- Footer -->
-    <div class="container" id="footer">
-
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo, dolorem. Qui aliquid itaque sapiente exercitationem vitae, minus suscipit ipsam repudiandae libero quo, odio magni perferendis incidunt autem ratione sint harum! Lorem ipsum dolor sit amet
-        consectetur adipisicing elit. Ex facere non reprehenderit impedit veniam sapiente! Adipisci illo cupiditate minima! Omnis quae ratione unde eveniet, explicabo nisi quisquam velit alias provident? Lorem ipsum, dolor sit amet consectetur adipisicing
-        elit. Quo, dolorem. Qui aliquid itaque sapiente exercitationem vitae, minus suscipit ipsam repudiandae libero quo, odio magni perferendis incidunt autem ratione sint harum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex facere non
-        reprehenderit impedit veniam sapiente! Adipisci illo cupiditate minima! Omnis quae ratione unde eveniet, explicabo nisi quisquam velit alias provident?
-
-    </div>
 </body>
+<!-- Links  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js" integrity="sha256-2p2tRZlPowp3P/04Pw2rqVCSbhyV/IB7ZEVUglrDS/c=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.js" integrity="sha256-peenofh8a9TIqKdPKIeQE7mJvuwh+J0To7nslvpj1jI=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.js" integrity="sha256-31FC/OT6XpfjAhj9FuXjw5/wPXXawCAjJQ29E23/XPk=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
+<script src="assets/script/app.js"></script>
 
 </html>
